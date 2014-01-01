@@ -1,5 +1,5 @@
-import userLogin from "./login"
+import userApi from './user';
 
 export default {
-    userLogin
-}
+  userApi,
+};
