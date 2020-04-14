@@ -1,0 +1,22 @@
+{
+  "name": "react-qb-template",
+  "version": "1.0.0",
+  "description": "A react code template based on CRA, which has proven to be scalable and managable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "react-qb-template": "./index.js"
+  },
+  "keywords": [
+    "react",
+    "react-template",
+    "react-code-structure"
+  ],
+  "author": "Adwaith R Krishna",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  }
+}
