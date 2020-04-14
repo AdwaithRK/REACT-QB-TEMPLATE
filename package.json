@@ -1,6 +1,6 @@
 {
   "name": "react-code-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react code template based on CRA, which has proven to be scalable and managable",
   "main": "index.js",
   "scripts": {
