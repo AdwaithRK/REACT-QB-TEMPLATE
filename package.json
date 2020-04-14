@@ -1,5 +1,5 @@
 {
-  "name": "react-qb-template",
+  "name": "react-code-template",
   "version": "1.0.0",
   "description": "A react code template based on CRA, which has proven to be scalable and managable",
   "main": "index.js",
@@ -12,7 +12,8 @@
   "keywords": [
     "react",
     "react-template",
-    "react-code-structure"
+    "react-code-structure",
+    "create-react-app"
   ],
   "author": "Adwaith R Krishna",
   "license": "ISC",

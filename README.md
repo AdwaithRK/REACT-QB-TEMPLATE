@@ -1,16 +1,16 @@
-react-qb-template
+react-code-template
 =======
 
 A react code template based on CRA, which has proven to be scalable and managable.
 
 ## Usage
 
-1. Make sure you have `react-qb-template` installed globally
+1. Make sure you have `react-code-template` installed globally
 	```sh
-	npm install -g react-qb-template
+	npm install -g react-code-template
 	```
 
-2. To create a react-qb-template project. Usage: `react-qb-template project-name`.
+2. Create a react-qb-template project. Usage: `react-code-template project-name`.
 	```sh
-    react-qb-template "project-name"
+    react-code-template "project-name"
 	```
