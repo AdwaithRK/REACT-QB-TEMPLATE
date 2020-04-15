@@ -17,6 +17,9 @@
   ],
   "author": "Adwaith R Krishna",
   "license": "ISC",
+  "contributors": [
+    "aravindjr <aravind715@gmail.com>"
+  ],
   "dependencies": {
     "fs-extra": "^9.0.0"
   }
