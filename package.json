@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "react-qb-template": "./index.js"
+    "react-code-template": "./index.js"
   },
   "keywords": [
     "react",
