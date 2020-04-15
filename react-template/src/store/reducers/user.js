@@ -1,4 +1,4 @@
-import * as actionTypes from "../actionTypes";
+import * as userActionTypes from "../actionTypes/user";
 
 const INITIAL_STATE = {
   email: "",
@@ -7,13 +7,12 @@ const INITIAL_STATE = {
 
 export default function loginReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case actionTypes.LOGIN_ACTIONS.STORE_LOGIN_TOKEN:
-      debugger;
+    case userActionTypes.STORE_LOGIN_TOKEN:
       return {
         ...state,
         ...action.payload
       };
-    case actionTypes.LOGIN_ACTIONS.USER_LOGIN_REQUEST:
+    case userActionTypes.LOGIN.REQUEST:
       return {
         ...state,
         ...action.credentials

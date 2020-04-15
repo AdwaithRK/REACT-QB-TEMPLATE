@@ -1,17 +1,12 @@
-import React from "react";
-import AppRoutes from "./routes";
-import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import rootReducer from "./store/reducers";
-import { createStore, applyMiddleware } from "redux";
-import "./App.scss";
-import createSagaMiddleware from 'redux-saga';
-import rootSaga from './store/middleware';
-const sagaMiddleware = createSagaMiddleware();
-const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(rootSaga);
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-function App() {
+import AppRoutes from './routes';
+import store from './store';
+import './App.scss';
+
+const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
@@ -19,6 +14,6 @@ function App() {
       </BrowserRouter>
     </Provider>
   );
-}
+};
 
 export default App;
