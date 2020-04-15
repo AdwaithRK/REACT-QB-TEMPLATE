@@ -9,7 +9,7 @@ function* watchUserLogin() {
 
 function* userLoginWithDetails(action) {
   try {
-    let response = yield call(userApi.userLogin, action.credentials);
+    let response = yield call(userApi.login, action.credentials);
     storeUserToken(response.data.token);
     yield put({
       type: userActionTypes.STORE_LOGIN_TOKEN,

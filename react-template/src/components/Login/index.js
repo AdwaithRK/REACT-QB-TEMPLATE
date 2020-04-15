@@ -1,8 +1,9 @@
-import './styles.scss';
-import { connect } from 'react-redux';
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import { Button, FormGroup, FormControl, FormLabel } from 'react-bootstrap';
+
 import { login } from '../../store/actions/user';
+import './styles.scss';
 
 const Login = (props) => {
   const [email, setEmail] = useState('');
@@ -26,7 +27,7 @@ const Login = (props) => {
           <FormLabel>Password</FormLabel>
           <FormControl value={password} onChange={(e) => setPassword(e.target.value)} type="password" />
         </FormGroup>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+        <Button block disabled={!validateForm()} type="submit">
           Login
         </Button>
       </form>
@@ -38,4 +39,4 @@ const mapDispatchToProps = () => ({
   login,
 });
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(null, mapDispatchToProps())(Login);
